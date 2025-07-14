@@ -1,0 +1,12 @@
+.red{ /* "." used for classes*/
+    color: brown;
+}
+
+.bg-yellow{
+    background-color: yellow;
+    color: blue;
+}
+
+#firstdiv{ /* "#" used for ID*/
+    background-color: greenyellow;
+}

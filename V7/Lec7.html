@@ -1,0 +1,38 @@
+<!--Forms and Input tags-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>JEE FORM</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" placeholder="Enter your Username" id="username">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscibe" id="subscibe" value="yes">
+            <label for="subscibe">Subscibe to my channel</label>
+        </div>
+        <div>
+            <label for="comment">Leave your comment here:</label>
+            <textarea name="comentbox" id="comment" rows="4" cols="19"></textarea>
+        </div>
+        <div>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
