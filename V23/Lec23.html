@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            /* display: inline;   upor theke margin asbe na */
+            display: inline-block;
+            /*upor theke margin, width anar jonno eta use korte hobe*/
+            padding: 15px;
+            margin: 24px;
+            width: 330px;
+        }
+
+        .box1 {
+            /* display: none; Etay box and or space dutoi erase hoye jabe */
+            visibility: hidden;
+            /*Ete box erase hoye jabe but space roye jabe*/
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+     
+    <div class="box">
+        I am a box
+    </div>
+
+    <div class="box box1">
+        also a nice box
+    </div>
+
+    <span>
+        I am a good
+    </span>
+    <span>boy</span>
+</body>
+
+</html>

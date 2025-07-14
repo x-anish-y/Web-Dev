@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        *{
+            margin: 12px;
+            padding: 2px;
+        }
+
+        :root{
+            --color: rgb(17, 0, 255);
+            --seccolor: Yellow;
+            --text-color: pink;
+            --defpad: 15px;
+            --defop: 0.65;
+        }
+
+        h1{
+            background-color: var(--color);
+            /* color: var(--seccolor); */
+            padding: var(--defpad);
+            color: var(--text-color);
+        }
+        
+
+        nav > ul > li:first-child{
+            background-color: var(--seccolor);
+            color: var(--color);
+            padding: var(--defpad);
+            opacity: var(--defop);
+        }
+        nav > ul > li{
+            background-color: var(--color);
+            color: var(--seccolor);
+            padding: var(--defpad);
+            opacity: var(--defop);
+            display: inline;
+        }
+        .third{
+            background-color: var(--seccolor);
+            color: var(--color);
+            padding: var(--defpad);
+            opacity: var(--defop);
+        }
+
+        p{
+            background-color: var(--seccolor);
+            /* color: var(--color); */
+            padding: var(--defpad);
+            opacity: var(--defop);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+    <Div>
+        <h1>INFO</h1>
+        <nav>
+            <ul>
+                <li>Tits</li>
+                <li>Boobies</li>
+                <li class="third">Ass</li>
+            </ul>
+        </nav>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum corporis tempore eaque sapiente magni qui architecto porro, recusandae dolor praesentium labore ut error doloremque sequi earum sint consectetur. Facilis alias non nihil quisquam provident eius sapiente aliquid. Inventore quia incidunt enim unde! Minus officiis quisquam omnis tenetur, porro repellat itaque incidunt eum, quae voluptas, dicta nihil assumenda maiores quidem error voluptates similique eveniet aspernatur. Laboriosam veritatis ipsum vitae qui maxime, impedit animi blanditiis modi accusantium nisi harum, mollitia aperiam omnis dolores, doloribus iste. Fuga.</p>
+    </Div>
+</body>
+</html>

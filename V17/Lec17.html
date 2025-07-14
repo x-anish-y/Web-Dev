@@ -1,0 +1,97 @@
+<!-- CSS Selectors MasterClass -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            /* background-color: red; */
+        }
+        
+        /* Class Selector */
+        .red{
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #green{
+            background-color: purple;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: blue;
+        }
+
+        /* Descendant Selector */
+        div p{
+            color: red;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ***********Pseudo Selector******** */
+        
+        /* Color after visiting the website */
+        a:visited{
+            color: yellow;
+        }
+
+        /* color before visiting the website */
+        a:link{
+            color: yellowgreen;
+        }
+
+        /* Color while clicking the link */
+        a:active{
+            background-color: orchid;
+        }
+
+        /* While the cursor is on the link */
+        a:hover{
+            background-color: green;
+        }
+
+        p:first-child{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        i am a div.
+    </div>
+
+    <div>
+        i am also a div
+        <p>I am a para inside div 2</p>
+    </div>
+
+    <div id="green">
+        i am also a div but i came third
+    </div>
+
+    <div>
+        <article>
+            <p>
+                jahdbwyukqdfbdiyqwdf
+            </p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.youtube2.com">Go to Youtube</a>
+
+    <main>
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+</html>
