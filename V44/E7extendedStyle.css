@@ -1,0 +1,268 @@
+* {
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 330px;
+
+}
+
+.x {
+    float: left;
+    margin-left: 335px;
+    margin-top: 5px;
+}
+
+span {
+    margin-top: 12px;
+    margin: 20px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.y {
+    margin-top: 12px;
+}
+
+* {
+    font-family: 'Segoe UI';
+}
+
+nav {
+    justify-items: center;
+    margin-top: 62px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+    display: inline;
+}
+
+.a {
+    float: right;
+    padding-left: 22px;
+    padding-top: 15px;
+}
+
+.b {
+    font-weight: 495;
+    font-size: 24px;
+    line-height: 1.3em;
+    width: 49vw;
+    text-align: center;
+}
+
+.download {
+    display: inline-block;
+    border: 2px;
+    color: white;
+    background-color: #00b6d1;
+    padding: 15px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    margin-left: 23vw;
+    margin-top: 52px;
+}
+
+.d {
+    float: left;
+}
+
+.c {
+    display: inline;
+    margin-top: 24px;
+}
+
+.body {
+    display: grid;
+    /* border: 2px solid; */
+    margin-left: 24vw;
+    margin-right: 24vw;
+    gap: 20px;
+    /* grid-template-areas: "English  Deutsch Italiano"
+        "Español français Portuguêsbrasileiro"
+        "日本 한국어 华语"; */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 945px) {
+    .body{
+        display: grid;
+    margin-left: 24vw;
+    margin-right: 24vw;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    }
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid transparent;
+    height: 190px;
+    width: 100%;
+    background-color: rgba(240, 240, 240, 0.521);
+    border-radius: 5px;
+}
+
+.link1 {
+    justify-self: center;
+}
+
+.e {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link2 {
+    justify-self: center;
+}
+
+.f {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link3 {
+    justify-self: center;
+}
+
+.g {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link4 {
+    justify-self: center;
+}
+
+.h {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link5 {
+    justify-self: center;
+}
+
+.i {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link6 {
+    justify-self: center;
+}
+
+.j {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link7 {
+    justify-self: center;
+}
+
+.k {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link8 {
+    justify-self: center;
+}
+
+.l {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link9 {
+    justify-self: center;
+}
+
+.m {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.link10 {
+    justify-self: center;
+}
+
+.n {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 52px;
+}
+
+.body a{
+    text-decoration: none;
+    color: white;
+}
+
+.download a{
+    text-decoration: none;
+    color: white;
+}
