@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+        color: red;
+        } */
+        .box::first-letter{
+            font-size: 30px;
+        }
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        [data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 22px;
+        }
+        /* for grouping */
+        /* p, a, .box, [data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 22px;
+        } */ 
+
+        /* .box:nth-child(odd){
+            background-color: purple;
+        } */
+        /* .box:nth-last-child(1){
+            background-color: green;
+        } */
+        .boxes::before{
+            content: "BOOBies";
+            color: aquamarine;
+        }
+        .boxes::after{
+            content: "NOOBies";
+            color: greenyellow;
+        }
+
+        .box::selection{
+            background-color: black;
+            color: white;
+        }
+
+        /* for whole pg */
+        ::selection{
+            background-color: black;
+            color: white;
+        }
+
+        input::placeholder{
+            color: blue;
+            /* font-size: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus commodi eos, minus neque reprehenderit laboriosam maiores. Accusamus delectus corporis veniam id voluptatem inventore modi enim aliquid dolorum quos! Natus praesentium ab saepe iste fugiat!</div>
+        <div data-color="primary" class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="Type your name">
+    </div>
+</body>
+</html>

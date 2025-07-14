@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 50vh;
+            border: 2px solid;
+            display: grid;
+            /* grid-template-columns: [Pahla] 100px [Dusra] 120px [t];
+            grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+            /* gap: 22px; */
+            column-gap: 12px;
+            row-gap: 32px;
+            /* display: flex; */
+            /* justify-items: center;
+            align-items: center; */
+            place-content: center;
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+         .item-4{
+            align-self: start;
+            justify-self: end;
+            /*
+            grid-column: Pahla/t;
+            grid-column: Pahla/Dusra;
+            grid-row: 1/2;*/
+        }/*
+        .item-1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            U can also write 
+            grid-row-start: 1;
+            grid-row-end: 2;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
