@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container{
+            background-color:red;
+            height: 40vh;
+            width: 90vw;
+        }
+        .box{
+            background-color:aquamarine;
+            height: 4vh;
+            width: 9vw;
+
+            /* Transition*************** */
+
+            /* transition-property: transform; Konsa class transform hoga wo batana hai */
+            /* transition-property: all; SOb properties e lege jabe */
+            /* transition-property: background-color, transform; /*Peticular properties e lege jabe*/
+            /* transition-duration: 2s; */
+            /* transition-timing-function: ease-in-out; Type of transition */
+            /* transition-delay: 1s; Transition kotokhon por start hobe */ 
+            transition: background-color 3s ease-in-out 1s;
+        }
+
+        .translate{
+            transform: translateX(150%) translateY(150%) scale(2);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

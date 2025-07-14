@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms - 2D & 3D</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Rotate************ */
+            /* transform: rotate(30deg); */
+            /* transform: rotate(0.15turn); */
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: rotateZ(40deg); */
+
+            /* Scale********** */
+            /* transform: scale(0.75); */
+
+            /* Skew************** */
+            /* transform: skew(5deg); */
+
+            /* Translate************* */
+            /* transform: translate(55px); */
+            /* transform: translate(55%); */
+
+            /* While using more than one transform property */
+                transform: scale(0.85) rotate(15deg) skew(22deg) translate(100px);
+        }
+
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
