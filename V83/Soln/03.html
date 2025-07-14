@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let size = prompt("Enter the lenght of your string: ")
+        let str = []
+        for(let i = 0; i < size; i++){
+            let ele = prompt("Enter the elements: ")
+            str.push(ele)
+        }
+        console.log(str)
+        let strrev = []
+        for(let i = 0; i < size; i++){
+            if(size == 1){
+                strrev[i] = str[i]
+            }
+            else{
+                strrev[i] = str[size-i-1]
+            }
+        }
+        console.log(strrev)
+    </script>
+</body>
+</html>

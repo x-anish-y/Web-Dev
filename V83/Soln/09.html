@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        function randomdelay(){
+            let delay = Math.ceil(0 + Math.random()*5000)
+            return delay;
+        }
+        console.log('Thank You for odering');
+        console.log('Let me confirm your order')
+        async function placeOrder(){
+            return new Promise((resolve) => {
+                setInterval(() => {
+                    resolve("Your Order has been confirmed");
+                }, randomdelay())
+            })
+        }
+        let placed = await placeOrder()
+        console.log(placed)
+    </script>
+</body>
+</html>

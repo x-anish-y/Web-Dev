@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let size = parseInt(prompt("Enter the length of the array: "));
+        let arr = []
+        for (let i = 0; i < size; i++) {
+            let values = parseInt(prompt("Enter the elements of the string: "))
+            arr.push(values)
+        }
+
+        function sum(arr) {
+            let total = 0
+            for (let i = 0; i < size; i++) {
+                if (arr[i] < 0){
+                    break;
+                }
+                else{
+                    total = total + arr[i]
+                }
+            }
+            return total
+        }
+
+        console.log(sum(arr))
+    </script>
+</body>
+
+</html>

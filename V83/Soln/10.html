@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function randomdelay(){
+        let delay = Math.ceil(0 + Math.random() * 5000);
+        return delay;
+    }
+
+    async function brewCoffee(){
+        let coffee = prompt("Enter your type of coffee: ");
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve("Your " + coffee + " coffee is ready after " + randomdelay() + " ms.");
+            }, randomdelay());
+        }).then(alert);
+    }
+
+    brewCoffee();
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pass = prompt("Enter your Password: ")
+        let upper = false
+        let lower = false
+        let dig = false
+        if (pass.length < 8) {
+            console.log("Your Password is too short. Please Enter a Password of more than 8 letters.")
+        }
+        else {
+            for (let i = 0; i < pass.length; i++) {
+                let char = pass[i]
+                if (char >= 'A' && char <= 'Z') {
+                    upper = true
+                }
+                if (char >= 'a' && char <= 'z') {
+                    lower = true
+                }
+                else if (char >= '0' && char <= '9') {
+                    dig = true
+                }
+            }
+            if (upper && lower && dig) {
+                console.log("Your Password is: ", pass)
+            }
+            else {
+                console.log("Invalid Password")
+            }
+        }
+    </script>
+</body>
+
+</html>

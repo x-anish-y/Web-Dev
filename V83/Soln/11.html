@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Electronics = ["OnePlus", "Samsung", "IQOO", "realme", "Apple"];
+        let Beauty = ["Skincare", "Haircare", "Makeup", "Fragnance", "Grooming"]
+        let Furniture = ["Mattress", "office", "Sofa", "Recliner", "Bed"]
+        let Appliances = ["AC", "Projector", "Microwave", "Refrigerator", "Chimney"]
+        let userelec = []
+        let userbeu = []
+        let userfur = []
+        let userapp = []
+
+        let size = parseInt(prompt("Enter your number of products: "));
+        let usr = []
+        for(let i = 0; i < size; i++){
+            let pdf = prompt("Enter the products: ")
+            usr.push(pdf)
+        }
+
+        for(let i = 0; i < size; i++){
+            for(let q = 0; q < Appliances.length; q++){
+                if(usr[i]==Appliances[q]){
+                    userapp.push(usr[i])
+                }
+            }
+            for(let p = 0; p < Beauty.length; p++){
+                if(usr[i]==Beauty[p]){
+                    userbeu.push(usr[i])
+                }
+            }
+            for(let r = 0; r < Electronics.length; r++){
+                if(usr[i]==Electronics[r]){
+                    userelec.push(usr[i])
+                }
+            }
+            for(let s = 0; s < Furniture.length; s++){
+                if(usr[i]==Furniture[s]){
+                    userfur.push(usr[i])
+                }
+            }
+        }
+        console.log(userapp)
+        console.log(userbeu)
+        console.log(userelec)
+        console.log(userfur)
+    </script>
+</body>
+</html>

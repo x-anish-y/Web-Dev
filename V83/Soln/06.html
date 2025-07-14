@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let upper = false
+        let lower = false
+        let size = parseInt(prompt("Enter the lenght of your string: "))
+        let str = []
+        let ele
+        for(let i = 0; i < size; i++){
+            ele = prompt("Enter the elements: ")
+            str.push(ele)
+        }
+        function total(str){
+            let count = 0
+            for(let i = 0; i < size; i++){
+                if('AEIOU'.includes(str[i])){
+                    upper = true
+                    count+=1
+                }
+                if('aeiou'.includes(str[i])){
+                    lower = true
+                    count+=1
+                }
+            }
+            return count;
+        }
+        console.log(total(str))
+    </script>
+</body>
+</html>
