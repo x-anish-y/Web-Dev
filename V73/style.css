@@ -1,0 +1,27 @@
+.container{
+    border: 2px solid;
+    height: 102px;
+    width: 932px;
+
+}
+.thumbnail{
+    padding-left: 4px;
+    padding-top: 4px;
+}
+.thumbnail > img{
+    border-radius: 8px;
+    float: inline-start;
+}
+.text{
+    margin-left: 182px;
+    margin-top: 12px;
+}
+.smalltext{
+    margin-top: 12px;
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+}
+.title{
+    font-size: 20px;
+}
