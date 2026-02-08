@@ -1,0 +1,11 @@
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>
+      HHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHHAAHAHAHAHJHDHWEBHRVBEHVBEHJVBEHFCGHJBTURNICWEMOWKXEMONB4NRCMEKCORNBTNRCEKCONIBYVBRNXEWPNCRBY
+    </div>
+  )
+}
+
+export default page
